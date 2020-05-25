@@ -27,7 +27,7 @@
             </div>
             <div class="header-top__logo"><img src="./assets/img/logotype.svg" alt="Ibis Studio"></div>
             <div class="header-top__button">
-              <button class="header-top__button" type="button"><img src="./assets/img/phone_ico.svg"><span>Звонок</span></button>
+              <button class="header-top__button" type="button" data-modal-trigger="callback"><img src="./assets/img/phone_ico.svg"><span>Звонок</span></button>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
             <p>Мы поможет тебе выйти на стабильный <br>заработок в 100 тысяч рублей</p>
           </div>
           <div class="page-header__buttons">
-            <button class="button button--circle" type="button">Отправить заявку</button>
+            <button class="button button--circle" type="button" data-modal-trigger="resume">Отправить заявку</button>
           </div>
         </div>
       </div>
@@ -87,6 +87,15 @@
               <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_04.jpg"></div>
               <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_05.jpg"></div>
               <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_06.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_07.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_08.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_09.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_10.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_11.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_12.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_13.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_14.jpg"></div>
+              <div class="rooms__item swiper-slide"><img src="./assets/img/content/room_15.jpg"></div>
             </div>
             <div class="rooms__pagination rooms-pagination">
               <button class="rooms-pagination__button rooms-pagination__button--prev" type="button">
@@ -145,13 +154,17 @@
           <div class="faq js-faq">
             <div class="faq__item">
               <div class="faq__headline">
-                <div class="faq__title">Когда я смогу получить свою первую зарплату?</div><span class="faq__icon"></span>
+                <div class="faq__title">Когда я смогу получить свою первую зарплату?</div><span class="faq__icon">
+                  <div class="icon-close"></div></span>
               </div>
-              <div class="faq__content"></div>
+              <div class="faq__content">
+                <p>Каждая модель сама выбирает удобный для нее график выплат, мы можем выплачивать день в день, раз в неделю, или раз в месяц.</p>
+              </div>
             </div>
             <div class="faq__item">
               <div class="faq__headline">
-                <div class="faq__title">Можно ли работать со слабым уровнем английского?</div><span class="faq__icon"></span>
+                <div class="faq__title">Можно ли работать со слабым уровнем английского?</div><span class="faq__icon">
+                  <div class="icon-close"></div></span>
               </div>
               <div class="faq__content">
                 <p>Уровень английского языка не важен, у нас есть программа, моментальный переводчик, ей очень удобно пользоваться</p>
@@ -159,27 +172,30 @@
             </div>
             <div class="faq__item">
               <div class="faq__headline">
-                <div class="faq__title">Получится ли совмещать с основной работой или учебой?</div><span class="faq__icon"></span>
+                <div class="faq__title">Получится ли совмещать с основной работой или учебой?</div><span class="faq__icon">
+                  <div class="icon-close"></div></span>
               </div>
-              <div class="faq__content"></div>
+              <div class="faq__content">
+                <p>Мы предоставляем гибкий график работы. Вы сами составляете себе график на неделю вперед согласно Вашей загрузке.</p>
+              </div>
             </div>
             <div class="faq__item">
               <div class="faq__headline">
-                <div class="faq__title">Обучение платное?</div><span class="faq__icon"></span>
+                <div class="faq__title">Что делать если нет опыта?</div><span class="faq__icon">
+                  <div class="icon-close"></div></span>
               </div>
-              <div class="faq__content"></div>
+              <div class="faq__content">
+                <p>Мы проведем бесплатное обучение работе в видеочате: расскажем о правилах сайтов, дадим советы как себя вести, чтобы понравиться собеседникам. Подберем имидж и одежду, дадим советы по стилю.</p>
+              </div>
             </div>
             <div class="faq__item">
               <div class="faq__headline">
-                <div class="faq__title">Вы поможете с жильем и переездом в Санкт-Питербург для работы?</div><span class="faq__icon"></span>
+                <div class="faq__title">Смогу ли я уйти в отпуск?</div><span class="faq__icon">
+                  <div class="icon-close"></div></span>
               </div>
-              <div class="faq__content"></div>
-            </div>
-            <div class="faq__item">
-              <div class="faq__headline">
-                <div class="faq__title">Смогу ли я уйти в отпуск?</div><span class="faq__icon"></span>
+              <div class="faq__content">
+                <p>Даты отпусков обговариваются индивидуально, но уже через три месяца можно взять отпуск.</p>
               </div>
-              <div class="faq__content"></div>
             </div>
           </div>
         </div>
@@ -269,6 +285,46 @@
         </div>
       </div>
     </footer>
+    <div class="modal" data-modal-name="resume">
+      <div class="modal__inner">
+        <button class="modal__close icon-close" type="button" title="Закрыть" data-modal-dismiss></button>
+        <h4 class="modal__title">Отправить анкету для собеседования</h4>
+        <div class="modal__content">
+          <form class="form">
+            <label class="form__group"><span class="form__title">Как вас зовут?</span>
+              <input class="field-input" type="text">
+            </label>
+            <label class="form__group"><span class="form__title">Телефон</span>
+              <input class="field-input" type="text">
+            </label>
+            <label class="form__group"><span class="form__title">Почта</span>
+              <input class="field-input" type="text">
+            </label>
+            <label class="form__group"><span class="form__title">Возраст</span>
+              <input class="field-input" type="text">
+            </label>
+            <button class="button button--outline" type="submit">Отправить анкету</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-name="callback">
+      <div class="modal__inner">
+        <button class="modal__close icon-close" type="button" title="Закрыть" data-modal-dismiss></button>
+        <h4 class="modal__title">Заказать звонок</h4>
+        <div class="modal__content">
+          <form class="form"></form>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal-name="thanky">
+      <div class="modal__inner">
+        <div class="modal__content modal-thanky">
+          <div class="modal-thanky__text">Ваша анкета отправлена, ожидайте, с вами свяжутся</div>
+          <button class="button button--outline button--full" type="button" data-modal-dismiss>Закрыть</button>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/main.min.js"></script>
   </body>
 </html>
